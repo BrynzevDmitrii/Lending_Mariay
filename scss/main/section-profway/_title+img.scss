@@ -1,0 +1,213 @@
+
+
+.sliderwork {
+    background-image: url('../../../img/bgsvim.svg');
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    max-width: 1920px;
+    margin-top: 125px;
+    min-height: 2421px;
+    background-size: cover;
+   background-position: center;
+    &__title {
+        max-width: 1280px;
+        margin: 0 auto;
+
+
+        &-title {
+            font-family: Amatic SC;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 65px;
+            line-height: 60px;
+            text-align: center;
+            color: #000000;
+            padding-top: 65px;
+        }
+    }
+
+    &__slider {
+        .sliderwork__list {
+            max-height: 585px;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 80px;
+        }
+        .sliderwork__title-arrow{
+            display: flex;
+            justify-content: end;
+            margin-top: 20px;
+        }
+        .rightarrow{
+            transform: rotate(180deg);
+            margin-left: 10px;
+            box-sizing: border-box;
+           
+        }
+        .arrow-active{
+            width: 80px;
+             
+        }
+       
+
+
+    }
+    
+
+    &__profway-title {
+        margin: 0 auto;
+        padding-top: 160px;
+        height: 60px;
+        left: 740px;
+        right: 740px;
+        top: 2004px;
+        font-family: Amatic SC;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 65px;
+        line-height: 60px;
+        /* identical to box height, or 92% */
+        text-align: center;
+        color: #000000;
+
+
+    }
+
+    &__profway{
+        max-width:80% ;
+        margin-left: 211px;
+    }
+
+   
+    
+
+    .sliderwork__profway-info {
+        display: flex;
+    
+        .sliderwork__profway-img {
+            margin: 153px 60px 0 0 ;
+        }
+       
+        
+
+        .sliderwork__profway-steps {
+            display: flex;
+
+            .sliderwork__profway-steps-list {
+                list-style-type: none;
+                margin: 90px 35px 0 60px;
+                display: flex;
+                flex-direction: column;
+
+                .profway-steps-item {
+                    margin-bottom: 155px;
+
+                }
+
+                .steps-yar {
+                    font-family: Museo Sans Cyrl;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 45px;
+                    line-height: 55px;
+                    text-align: center;
+                    color: #4D9C8C;
+                    text-align: center;
+
+                }
+
+                .steps-title {
+                    font-family: Museo Sans Cyrl;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 22px;
+                    line-height: 37px;
+                    text-align: center;
+                    color: #4D9C8C;
+
+
+                }
+
+                .steps-discription {
+                    font-family: Museo Sans Cyrl;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 29px;
+                    color: #000000;
+                    min-height: 60px;
+                    width: 100%;
+                    padding-bottom: 10px;
+                }
+
+
+                .steps-href {
+                    font-family: Museo Sans Cyrl;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 16px;
+                    padding-bottom: 4px;
+                    color: #E87383;
+                    text-decoration-line: none;
+                    border-bottom: 1px solid #E87383;
+                }
+
+            }
+
+        }
+        .sliderwork__profway-steps-list2{
+            margin: 130px 0 0 0 ;
+        }
+        hr{
+            opacity: 0.3;
+            border: 2px solid #4D9C8C;
+            box-sizing: border-box;
+            margin-top: 80px;
+        }
+
+    }
+
+    .sliderwork__profway-button{
+        margin-top: 66px;
+        display: flex;
+        margin-left: 720px;
+        &-more{
+            width: 279px;
+            height: 60px;
+            background: #FFFFFF;
+            border: 1px solid #E87383 ;
+            box-shadow: 0px 15px 30px rgba(232, 115, 131, 0.25);
+            border-radius: 100px;
+            margin-left: 30px;
+            a{
+                    font-family: Museo Sans Cyrl;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 22px;
+                    width: 229px;
+                    text-decoration: none;
+                    text-align: center;
+                    color: #E87383;
+                    position: relative;
+                    top: 19px;
+                    left: 30px;
+                   
+                    
+            }
+            
+        }
+        .active{
+            background: #E87383;
+            a{
+                color: #FFFFFF;
+            }
+         }
+
+    }
+    
+}
+
+

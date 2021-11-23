@@ -1,0 +1,23 @@
+.footer__footer-container{
+
+.footer__footer-list{
+    display: flex;
+    list-style-type: none;
+    .footer__footer-item{
+        margin-right: 30px;
+        .footer-item-title{
+            font-family: Museo Sans Cyrl;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 37px;
+            text-align: center;
+            color: #FFFFFF;
+            opacity: 0.8;
+        }
+    }
+    .footer__footer-item:hover{
+        cursor: pointer;
+    }
+}
+}

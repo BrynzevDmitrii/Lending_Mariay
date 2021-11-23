@@ -1,0 +1,128 @@
+.body{
+    font-family:'Museo Sans Cyrl','Amatic SC' ;
+    width: 100%;
+    position: relative;
+}
+.header__pinkspot{
+    position: absolute;
+    top: 636px;
+
+}
+.header__greenspot{
+    position: absolute;
+    left: 96.9%;
+    top:20%;
+}
+
+.header__greenspotbutton5{
+display: flex;
+flex-direction: column;
+position: absolute;
+top: 19%;
+left: 31%;
+list-style-type: none;
+
+}
+.header{
+    display: flex;
+        margin: 0 auto;
+        max-width: 1635px;
+        flex-direction: column;
+        &__navbar{
+            
+            margin-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            .header___navbar-burger{
+                margin-top: 30px;
+        }
+        &-socialInfo{
+            margin-top: 19px;
+            .header__navbar-socialButton .button{
+            padding-right: 13px;
+            }
+            .header__text{
+                height: 14px;
+                text-decoration-line: none;
+                font-family: Museo Sans Cyrl;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 15px;
+                line-height: 16px;
+                color: rgba(232, 115, 131, 0.6);
+            }
+            .header__text p{
+                padding-left: 13px;
+                padding-top: 10px;
+            }
+        }
+
+        &-actual{
+            position: relative;
+            width: 279px;
+            height: 60px;
+        border: 1px solid #E87383;
+        box-sizing: border-box;
+        border-radius: 100px;
+        right: 20%;
+            .buttonText{
+                font-weight: 300;
+                width: 160px;
+                height: 22px;
+                font-family: Museo Sans Cyrl;
+                font-size: 18px;
+                line-height: 22px;
+                // text-align: center;
+                color: #E87383;
+            }
+        }
+
+        &-course{
+            text-decoration: none;
+            position: absolute;
+            left: 60px;
+            top: 19px;
+
+        }
+    }
+        &__titleInfo{
+            &-title{
+                display: flex;
+                justify-content: space-between;
+                margin-left: 11%;
+            }
+            
+        }
+        .color{
+            color:#E87383;
+        }
+        .header__titleInfo-scills{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 119px;
+            list-style-image: url("/img/vetca.svg");
+            width: 100%;
+            margin-left: 65px;
+            .header__titleInfo-numberStyle{
+                font-family: Amatic SC;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 60px;
+                line-height: 24px;
+                color: #000000;
+            }
+            .header__titleInfo-stringStyle{
+                margin-top: 20px;
+                margin-left: -10px;
+                font-family: Museo Sans Cyrl;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 22px;
+                line-height: 24px;
+                color: #000000;
+
+            }
+            
+        }
+         
+}

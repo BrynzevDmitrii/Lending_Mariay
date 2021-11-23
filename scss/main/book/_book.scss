@@ -1,0 +1,97 @@
+.book__title {
+    max-width: 1234px;
+    min-height: 683px;
+    margin: 0 auto;
+    margin-top: 196px;
+
+    .book__title-container {
+        .book__title-title {
+            font-family: Amatic SC;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 65px;
+            line-height: 60px;
+            text-align: center;
+            color: #000000;
+            padding-bottom: 80px;
+
+        }
+
+        .book__img-container {
+            display: flex;
+
+            .book__img-lactobacteriy {
+                max-width: 660px;
+                max-height: 543px;
+                padding-right: 70px;
+            }
+        }
+
+        .book__img-withBg {
+            position: relative;
+        }
+
+        .opasitybg {
+            position: absolute;
+            // background-color: #000;
+            top: 60px;
+            left: 55px;
+        }
+
+        .book__img-titlecontainer {
+            position: absolute;
+            top: 91px;
+            left: 75px;
+
+
+            .book__img-title {
+                padding-bottom: 15px;
+                font-family: Sans Cyrl;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 37px;
+                line-height: 37px;
+                text-align: center;
+                color: #4D9C8C;
+            }
+
+            .book__img-discription {
+                max-width: 324px;
+                box-sizing: border-box;
+                font-family: Museo Sans Cyrl;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 24px;
+                text-align: center;
+                color: #000000;
+            }
+
+           
+        }
+    }
+}
+.book__img-button{
+    position: absolute;
+    width: 279px;
+    height: 60px;
+    background: #4D9C8C;
+    box-shadow: 0px 15px 30px rgba(77, 156, 140, 0.25);
+    border-radius: 100px;
+    text-decoration: none;
+    text-align: center;
+    top: 475px;
+    right: 129px;
+    .book__img-p{
+        font-family: Museo Sans Cyrl;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #FFFFFF;
+        padding-top: 19px;
+       
+    }
+        
+}
