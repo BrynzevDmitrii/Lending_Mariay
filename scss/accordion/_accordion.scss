@@ -1,0 +1,108 @@
+.accordion{
+    margin-bottom: 190px;
+    .accordion__container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        max-width: 1280px;
+        .accordion__title{
+            font-family: Amatic SC;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 65px;
+            line-height: 60px;
+            text-align: center;
+            color: #000000;
+            margin-bottom: 80px;
+            margin-top: 150px;
+        }
+        .accordion__list{
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            
+            
+        }
+        .accordion__item{
+            position: relative;
+            width: 1280px;
+            min-height: 97px;
+            background: #4D9C8C;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+        .accordion__item-title{        
+            font-family: Museo Sans Cyrl;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 30px;
+            line-height: 37px;
+            color: #FFFFFF;
+            position: relative;
+                top: 30px;
+                left: 30px;
+
+        }
+        .accordion__closed{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left: 1208px;
+            top: 27px;
+            cursor: pointer;
+            
+        }
+        .accordion__item-description{
+            display: none;
+        }
+       
+        .accordion__item-img{
+            display: none;
+        }
+    }
+    .accordion__item.active_accordion{
+            box-sizing: content-box;
+            width: 1280px;
+            min-height: 155px;
+            background: #FFFFFF;
+            border-radius: 20px;
+            border: 1px solid #4D9C8C;
+            box-sizing: border-box;
+                 
+            .accordion__item-title{
+                max-width: 664px;
+                min-height: 37px;
+                font-family: Museo Sans Cyrl;
+                font-weight: 300;
+                font-size: 30px;
+                line-height: 37px;
+                color: #4D9C8C;
+            }
+            .accordion__item-description{
+                display: block;
+                width: 662px;
+                min-height: 43px;
+                font-family: Museo Sans Cyrl;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+                color: #000000;
+                margin: 52px 0 30px 30px;
+            }
+            .accordion__item-img{
+                display: block;
+                position: absolute;
+                left: 1134px;
+                top: 0px;
+                border-right: 20px;
+            }
+            .accordion__closed{
+                z-index: 3;
+                transform: rotate(-45deg);
+            }
+        
+        
+    }
+}

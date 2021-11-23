@@ -1,0 +1,54 @@
+.numbersProfi__container{
+    max-width: 1250px;
+    height: 964px;
+    margin: 0 auto;
+    padding-top: 190px;
+
+    
+    .numbersProfi__title{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        &-title{
+            margin-bottom: 80px;
+            font-family: Amatic SC;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 65px;
+            line-height: 60px;
+            text-align: center;
+            color: #000000;
+
+        }
+        .numbersProfi__list-container{
+            display: flex;
+            min-width: 100%;
+            
+            .numbersProfi__list-img{
+                list-style-type:none;
+                position: relative;
+                
+                .item-img1 {
+                    margin-right: 224px;
+                    position: relative;
+                    background-color: rgb(255, 255, 255)
+                }
+                .item-img2{
+                    margin-left: 259px;
+                    position: absolute;
+                    top: 74%;
+                    background-color: rgb(255, 255, 255);
+                    box-shadow: 0px 10px 30px rgba(77, 156, 140, 0.15);
+border-radius: 20px;
+                    
+                }
+                
+                .item-img3{
+                    margin-left: 165px;
+                    position: absolute;
+                    top: 167%;
+                }
+            }
+        }
+    }
+}

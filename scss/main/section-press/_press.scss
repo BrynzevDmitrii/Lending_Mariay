@@ -1,0 +1,112 @@
+.press__container {
+    max-width: 1280px;
+    min-height: 880px;
+    margin: 0 auto;
+    margin-top: 190px;
+
+    .press__title {
+        font-family: Amatic SC;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 65px;
+        line-height: 60px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 80px;
+    }
+    .press__news{
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .press__newsBlokc{
+            position: relative;
+            .border{
+                position: absolute;
+                min-width: 400px;
+                min-height: 350px;
+                border: 1px solid #E87383;
+                border-radius: 20px;
+                opacity: 0.3;
+            }
+            margin-bottom: 40px;
+            box-sizing: border-box;
+           
+           
+            .press__newsBlokc-preveu{
+                width: 402px;
+                height: 200px;              
+                background: #D3D3D3;
+                // border: 1px solid rgba(232, 115, 131, 0.3);
+                box-sizing: border-box;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 40px;
+                    height: 35px;
+                    padding-bottom: 23px;
+                }
+                .press__newsBlokc-title{
+                    font-family: Museo Sans Cyrl;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 22px;
+                    line-height: 24px;
+                    color: #000000;
+                }
+            }
+            .press__newsBlokc-description{
+                
+              margin: 15px 31px 31px 31px;
+              .date{
+                font-family: Museo Sans Cyrl;
+                font-size: 16px;
+                line-height: 16px;                                
+                color: #4D9C8C;                
+                opacity: 0.5;
+                padding-bottom: 10px;
+              }
+              .description{
+                width: 265px;
+                height: 48px;
+                font-family: Museo Sans Cyrl;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 24px;
+                color: #000000;
+                overflow:hidden;
+                text-overflow: ellipsis;
+                padding-bottom: 10px;
+              }
+                
+            }
+            .press__href{
+                display: flex;
+                justify-content: space-between;
+                .source{
+                    text-decoration: none;
+                    font-family: Museo Sans Cyrl;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 16px;
+                    color: #4D9C8C;
+                    opacity: 0.5;
+                }
+               .sea{
+                text-decoration: none;
+                font-family: Museo Sans Cyrl;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 16px;
+                color: #E87383;
+               }
+            }
+        }
+    }
+}

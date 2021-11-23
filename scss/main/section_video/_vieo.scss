@@ -1,0 +1,87 @@
+.video{
+    max-width: 1298px;
+    min-height: 947px;
+    margin: 0 auto;
+    margin-top: 196px;
+    position: relative;
+    .video__container{
+        position: relative;
+        .video_container-title{
+            font-family: Amatic SC;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 65px;
+            line-height: 60px;
+            text-align: center;
+            color: #000000;
+            margin-bottom: 70px;
+        }
+        .video__container-video{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          
+        }
+        .video__img{
+            width: 1060px;
+            height: 707px;
+        }
+        .LeftBottom{
+            position: absolute;
+            top: 777px;
+            left: 0;
+        }
+        .LeftTop{
+            position: absolute;
+            top: 56px;
+            left: 0;
+        }
+        .RightBottom{
+            position: absolute;
+            top: 777px;
+            left: 1110px;
+        }
+        .RightTop{
+            position: absolute;
+            top: 56px;
+            left: 1110px;
+        
+        }
+    }
+    .video__button{
+        display: flex;
+        justify-content: center;
+        .video__button-more{
+            width: 279px;
+            height: 60px;
+            border: 1px solid #E87383;
+            box-sizing: border-box;
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-right: 30px;
+            a{
+                font-family: Museo Sans Cyrl;
+                font-size: 18px;
+                line-height: 22px;
+                width: 229px;
+                text-decoration: none;
+                color: #E87383;
+                
+               
+               
+                
+        }
+        
+    }
+    .active{
+        background: #E87383;
+        a{
+            color: #FFFFFF;
+        }
+     }
+    }
+    
+}

@@ -1,0 +1,88 @@
+.reviews{
+    background-image: url("./../../../img/bgsvim.svg");
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-top: 160px;
+    max-width: 1920px;
+    min-height: 1816px ;
+    //background-size: cover;
+    // background-position: center;
+    
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-top: 35px;
+        max-width: 1300px;
+        &-title{
+            font-family: Amatic SC;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 65px;
+            line-height: 60px;
+            text-align: center;
+            color: #000000;
+            margin-bottom: 80px;
+    
+        }
+    }
+    .slider-list{
+        display: flex;
+        list-style-type: none;
+        margin-top: 60px;
+        .slider-item__wrapper{
+            position: relative;
+            margin-right: 40px;
+        }
+        .slider-item__woomen{
+            position: absolute;
+            z-index: 1;
+            left: 0;
+        }
+        .slider-item__name{
+            position: absolute;
+            z-index: 1;
+            left: 238px;
+            top: 20px;
+            font-family: Museo Sans Cyrl;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 30px;
+            line-height: 37px;
+            text-align: center;
+            color: #4D9C8C;    
+          }
+
+        .slider-item__discription{
+            font-family: Museo Sans Cyrl;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 24px;
+            color: #000000;
+            max-width: 324px;
+            box-sizing: border-box;
+            margin-bottom: 23px;
+            position: absolute;
+            left: 238px;
+            top: 72px;
+        }
+        .slider-item__location{            
+        font-family: Museo Sans Cyrl;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #E87383;
+        position: absolute;
+        left: 238px;
+        top: 226px;
+        display: flex;
+        min-width: 205px;
+        justify-content: space-between;
+        }
+    }
+}
+

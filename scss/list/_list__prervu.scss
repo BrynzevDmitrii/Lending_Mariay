@@ -1,0 +1,49 @@
+.reviews-list{
+    display: flex;
+    
+    .reviews-item{
+        display: flex;
+        // list-style-type: none;
+        // justify-content: center;
+        // /* position: relative; */
+        // width: 240px;
+        // height: 80px;
+        // background: #E5E5E5;
+        // box-shadow: 0px 15px 30px rgb(232 115 131 / 25%);
+        // border: 1px solid #E87383;
+        // border-radius: 20px;
+        // margin-left: 20px;
+        list-style-type: none;
+        // position: relative;
+        width: 240px;
+        height: 80px;
+        background: #f3ecec;
+        box-shadow: 0px 15px 30px rgba(232, 115, 131, 0.25);
+        border: 1px solid #E87383;
+        border-radius: 20px;
+        margin-left: 20px;
+        justify-content: space-around;
+
+        .reviews-item-block{
+           display: flex;
+           align-items: center;
+        }
+
+        .reviews-item-title {
+            box-sizing: border-box;
+            font-family: Museo Sans Cyrl;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 24px;   
+            background: #f3ecec;
+            margin-left: 17px;
+        }
+    }
+
+   
+    
+    
+    
+    
+}

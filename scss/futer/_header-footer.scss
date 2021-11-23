@@ -1,0 +1,105 @@
+footer {
+    background: #EA818F;
+}
+
+.footer-container {
+    margin: 0 auto;
+    padding-top: 40px;
+    max-width: 1280px;
+
+    .header-footer {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+        .header-footer-logo {
+            display: flex;
+            flex-direction: column;
+
+            .header-footer__button-list {
+                display: flex;
+                list-style-type: none;
+                width: 159px;
+                max-height: 25px;
+                margin-top: 57px;
+                justify-content: space-between;
+            }
+
+        }
+
+        .header-footer__href {
+            width: 557px;
+            height: 84px;
+
+            .header-footer__list {
+                list-style-type: none;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .footer-href__item {
+                a {
+                    text-decoration: none;
+                    font-family: Museo Sans Cyrl;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 25px;
+                    margin-right: 30px;
+                    line-height: 37px;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+
+
+
+            }
+
+            .footer-href__item:nth-child(3) {
+                a {
+                    margin-right: 0px;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+.header__footer-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .header__footer-btn {
+        width: 279px;
+        height: 60px;
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        filter: drop-shadow(0px 15px 30px rgba(232, 115, 131, 0.25));
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .header__footer-product {
+            text-decoration: none;
+
+            .header__footer-product-title {
+                font-family: Museo Sans Cyrl;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 22px;
+                text-align: center;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+.footer-hr {
+    opacity: 0.5;
+    border: 1px solid #FFFFFF;
+}
