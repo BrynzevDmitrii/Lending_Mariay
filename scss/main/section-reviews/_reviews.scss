@@ -26,15 +26,45 @@
             margin-bottom: 80px;
     
         }
-    }
-    .slider-list{
-        display: flex;
-        list-style-type: none;
-        margin-top: 60px;
-        .slider-item__wrapper{
-            position: relative;
-            margin-right: 40px;
+       
+        .reviews__slider-arrow{
+            display: flex;
+            justify-content: end;
+            margin-top: 20px;
+            .reviews__rightarrow{
+                transform: rotate(180deg);
+                margin-left: 10px;
+                box-sizing: border-box;
+               
+            }
+            .arrow-active{
+                width: 80px;
+                 
+            }
         }
+    }
+   .reviews__container-slider{
+       overflow: hidden;
+   }
+    .reviews__slider-list{
+        position: relative;
+        max-height: 585px;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 80px;
+        max-width: 1250px;
+        left: -3300px;
+        transition: all ease 2s;
+
+        
+        .reviews__slider-item{
+            margin-right: 40px; 
+            position: relative;
+            // .slider-item__wrapper {
+            //     position:absolute;
+            // }        
+        
         .slider-item__woomen{
             position: absolute;
             z-index: 1;
@@ -51,7 +81,7 @@
             font-size: 30px;
             line-height: 37px;
             text-align: center;
-            color: #4D9C8C;    
+            color: #5d9e43;    
           }
 
         .slider-item__discription{
@@ -75,7 +105,7 @@
         font-size: 16px;
         line-height: 22px;
         letter-spacing: 0.05em;
-        color: #E87383;
+        color: #b36672;
         position: absolute;
         left: 238px;
         top: 226px;
@@ -84,5 +114,47 @@
         justify-content: space-between;
         }
     }
+    }
+    .slider__button{
+        display: flex;
+        justify-content: center;
+        .slider__button-more{
+            width: 279px;
+            height: 60px;
+            border: 1px solid #E87383;
+            box-sizing: border-box;
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 30px;
+            .button-more-href{
+                min-width: 166px;
+                height: 22px;
+                font-family: Museo Sans Cyrl;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 22px;
+                text-decoration: none;
+                text-align: center;
+                color: #E87383;
+            }
+            
+            
+        }
+        .activeder{
+            background: #E87383;
+            .button-more-href{
+                    color: #FFFFFF;
+                
+            }
+        
+        }
+        
+    }
+   
 }
+
+
 

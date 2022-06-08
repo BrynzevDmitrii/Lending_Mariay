@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
     <script src="./javaScript/burger.js" defer></script>
+    <script src="./javaScript/sliderVector.js" defer></script>
+    <script src="./javaScript/reviewsSlider.js" defer></script>
+    <script src="./javaScript/buttnActive.js" defer></script>
+    <script src="./javaScript/accordion.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
 
 
@@ -19,7 +23,7 @@
 <body>
     <!-- Выпадающее бургер меню -->
     <div class="header___navbar-burger-container">
-     <div class="header___navbar-burger-list">
+    <div class="header___navbar-burger-list">
         <div class="header___navbar-burger-menu">
             
             <div class="header___navbar-burger-menu-social">
@@ -103,8 +107,8 @@
             <div class="header___navbar-burger">
                 <img src="./img/burgermenu.svg" alt="--">
             </div> 
-            <div class="header__navbar-logo">
-                <img src="./img/Group 1384.svg" alt="logo">
+            <div >
+                <img class="header__navbar-logo" src="./img/Group 1384.svg" alt="logo">
             </div>
             <div class="header__navbar-socialInfo">
                 <div class="header__navbar-socialButton">
@@ -112,8 +116,10 @@
                     <a href="#" class="button"><img src="./img/telegram.svg" alt="telegram"></a>
                     <a href="#" class="button"><img src="./img/whatsapp.svg" alt="whatsapp"></a>
                 </div>
-                <div><a href="#" class="header__text">
-                        <p>Записаться</p>
+                <div>
+                    <a href="#" class="header__text">
+                        Записаться
+                    </a>
                 </div>
             </div>
             <div class="header__navbar-actual">
@@ -130,18 +136,22 @@
                         <p class="header__titleheader-titleInfo">Мария Бражрикова</p>
                         <p class="header__titleheader-description">Эксперт по модификации<span class="color"> образа
                                 жизни , практикующий психолог,</span>
-
                             специалист<span class="color">
                                 нутригеномики</span> и практической <span class="color">эпигенетики</span></p>
+                                <p class="header__titleheader-description-tablet">
+                                    Эксперт в области здоровья и питания, специалист нутригеномикии практической эпигенетики
+                                </p>
                     </div>
+                
                     <!-- кнопки узнать, записаться -->
+                    <div class="header__titleInfo-wrapper">
                     <div class="header__titleInfo-button">
                         <div class="header__titleInfo-more active">
                             <a href="#">
-                                <p class="reconl activeb">Узнать больше о Марие</p>
+                                <p class="reconl">Узнать больше о Марие</p>
                             </a>
                         </div>
-                        <div class="header__titleInfo-more button">
+                        <div class="header__titleInfo-more">
                             <a href="#">
                                 <p class="reconl">Записаться онлайн</p>
                             </a>
@@ -163,22 +173,20 @@
                             <li>
                                 <p class="header__titleInfo-numberStyle">300+</p>
                                 <p class="header__titleInfo-stringStyle"> веб-конференций </p>
-
                             </li>
                         </ul>
                     </div>
-                    <!-- боковые картинки, видео -->
                 </div>
+                    <!-- боковые картинки, видео -->
+            </div>
                 <div class="header__titleInfo-side">
                     <img src="./img/videoTitle.svg" alt="video-title">
                     <div>
                         <img class="elips" src="./img/Ellipse 42.png" alt="img">
                     </div>
-
-                </div>
-
             </div>
         </div>
+        
 
     </header>
     <main>
@@ -190,8 +198,13 @@
                         <ul class="sliderwork__list">
                             <li class="sliderwork__list-item"><img src="./img/wraitebook.png" alt="wraitebook"></li>
                             <li class="sliderwork__list-item"><img src="./img/healsproduct.png" alt="healsproduct"></li>
-                            <li class="sliderwork__list-item"><img src="./img/facetofacetrainings.png"
-                                    alt="facetofacetrainings"></li>
+                            <li class="sliderwork__list-item"><img src="./img/facetofacetrainings.png" alt="facetofacetrainings"></li>
+                            <li class="sliderwork__list-item"><img src="./img/wraitebook.png" alt="wraitebook"></li>
+                            <li class="sliderwork__list-item"><img src="./img/healsproduct.png" alt="healsproduct"></li>
+                            <li class="sliderwork__list-item"><img src="./img/facetofacetrainings.png" alt="facetofacetrainings"></li>
+                            <li class="sliderwork__list-item"><img src="./img/wraitebook.png" alt="wraitebook"></li>
+                            <li class="sliderwork__list-item"><img src="./img/healsproduct.png" alt="healsproduct"></li>
+                            <li class="sliderwork__list-item"><img src="./img/facetofacetrainings.png" alt="facetofacetrainings"></li>
                         </ul>
                         <div class="sliderwork__title-arrow">
                             <img class="leftarrow " src="./img/Arrow left.svg" alt="leftarrow">
@@ -361,9 +374,10 @@
                     </ul>
                 </div>
                 <!-- слайдер _reviews.scss -->
-                <div class="reviews_container-slider">
-                    <ul class="slider-list">
-                        <li class="slider-item">
+                <div class="reviews__container-slider">
+                    <!-- <div class="slid_container"> -->
+                    <ul class="reviews__slider-list">
+                        <li class="reviews__slider-item">
                             <div class="slider-item__wrapper">
                                 <img class="slider-item__BG" src="./img/IrinaIvanovaBG.png" alt="BG">
                                 <img class="slider-item__woomen" src="./img/IrinaIvanova.png" alt="">
@@ -381,10 +395,10 @@
                                 </p>
                             </div>
                         </li>
-                        <li class="slider-item">
+                        <li class="reviews__slider-item">
                             <div class="slider-item__wrapper">
                                 <img class="slider-item__BG" src="./img/IrinaIvanovaBG.png" alt="BG">
-                                <img class="slider-item__woomen" src="./img/IrinaIvanova2.png" alt="">
+                                <img class="slider-item__woomen" src="./img/IrinaIvanova.png" alt="">
                                 <h2 class="slider-item__name">
                                     Ирина Иванова
                                 </h2>
@@ -392,14 +406,14 @@
                                     Сотрудничество с вами - сильно облегчило задачу благодаря тому,
                                     что ребята предоставляют полный комплекс услуг и имеют ряд очень
                                     профессиональных сотрудников.
-                                </p>
+                                </p>-+
                                 <p class="slider-item__location">
                                     Московская область
                                     <a href="#"><img src="./img/reviews_vk.svg" alt="reviews_vk"></a>
                                 </p>
                             </div>
                         </li>
-                        <li class="slider-item">
+                        <li class="reviews__slider-item">
                             <div class="slider-item__wrapper">
                                 <img class="slider-item__BG" src="./img/IrinaIvanovaBG.png" alt="BG">
                                 <img class="slider-item__woomen" src="./img/IrinaIvanova3.png" alt="">
@@ -417,20 +431,92 @@
                                 </p>
                             </div>
                         </li>
+                        <li class="reviews__slider-item">
+                            <div class="slider-item__wrapper">
+                                <img class="slider-item__BG" src="./img/IrinaIvanovaBG.png" alt="BG">
+                                <img class="slider-item__woomen" src="./img/IrinaIvanova3.png" alt="">
+                                <h2 class="slider-item__name">
+                                    Ирина Иванова
+                                </h2>
+                                <p class="slider-item__discription">
+                                    Сотрудничество с вами - сильно облегчило задачу благодаря тому,
+                                    что ребята предоставляют полный комплекс услуг и имеют ряд очень
+                                    профессиональных сотрудников.
+                                </p>
+                                <p class="slider-item__location">
+                                    Московская область
+                                    <a href="#"><img src="./img/reviews_vk.svg" alt="reviews_vk"></a>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="reviews__slider-item">
+                            <div class="slider-item__wrapper">
+                                <img class="slider-item__BG" src="./img/IrinaIvanovaBG.png" alt="BG">
+                                <img class="slider-item__woomen" src="./img/IrinaIvanova3.png" alt="">
+                                <h2 class="slider-item__name">
+                                    Ирина Иванова
+                                </h2>
+                                <p class="slider-item__discription">
+                                    Сотрудничество с вами - сильно облегчило задачу благодаря тому,
+                                    что ребята предоставляют полный комплекс услуг и имеют ряд очень
+                                    профессиональных сотрудников.
+                                </p>
+                                <p class="slider-item__location">
+                                    Московская область
+                                    <a href="#"><img src="./img/reviews_vk.svg" alt="reviews_vk"></a>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="reviews__slider-item">
+                            <div class="slider-item__wrapper">
+                                <img class="slider-item__BG" src="./img/IrinaIvanovaBG.png" alt="BG">
+                                <img class="slider-item__woomen" src="./img/IrinaIvanova.png" alt="">
+                                <h2 class="slider-item__name">
+                                    Ирина Иванова
+                                </h2>
+                                <p class="slider-item__discription">
+                                    Сотрудничество с вами - сильно облегчило задачу благодаря тому,
+                                    что ребята предоставляют полный комплекс услуг и имеют ряд очень
+                                    профессиональных сотрудников.
+                                </p>
+                                <p class="slider-item__location">
+                                    Московская область
+                                    <a href="#"><img src="./img/reviews_vk.svg" alt="reviews_vk"></a>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="reviews__slider-item">
+                            <div class="slider-item__wrapper">
+                                <img class="slider-item__BG" src="./img/IrinaIvanovaBG.png" alt="BG">
+                                <img class="slider-item__woomen" src="./img/IrinaIvanova.png" alt="">
+                                <h2 class="slider-item__name">
+                                    Ирина Иванова
+                                </h2>
+                                <p class="slider-item__discription">
+                                    Сотрудничество с вами - сильно облегчило задачу благодаря тому,
+                                    что ребята предоставляют полный комплекс услуг и имеют ряд очень
+                                    профессиональных сотрудников.
+                                </p>
+                                <p class="slider-item__location">
+                                    Московская область
+                                    <a href="#"><img src="./img/reviews_vk.svg" alt="reviews_vk"></a>
+                                </p>
+                            </div>
+                        </li>
                     </ul>
-                    <div class="slider__arrow">
-                        <img class="leftarrow " src="./img/Arrow left.svg" alt="leftarrow">
-                        <img class="rightarrow arrow-active" src="./img/Arrow left.svg" alt="rightarrow">
+                </div>
+                    <div class="reviews__slider-arrow">
+                        <img class="reviews__leftarrow " src="./img/Arrow left.svg" alt="leftarrow">
+                        <img class="reviews__rightarrow arrow-active" src="./img/Arrow left.svg" alt="rightarrow">
                     </div>
                     <div class="slider__button">
-                        <div class="slider__button-more active">
-                            <a href="#">Посмотреть все отзывы</a>
+                        <div class="slider__button-more activeder">
+                            <a  class = "button-more-href" href="#">Посмотреть все отзывы</a>
                         </div>
-                        <div class="slide__button-more">
-                            <a href="#">Записаться на курс</a>
+                        <div class="slider__button-more">
+                            <a class= "button-more-href" href="#">Записаться на курс</a>
                         </div>
                     </div>
-                </div>
             </div>
             <!-- Автор о курсе _vieo.scss -->
             <section class="video" id="work">
@@ -440,7 +526,7 @@
                     </h2>
                     <div class="video__container-video">
                         <img class="video__img" src="./img/VIDEOIMG.png" alt="video">
-                        <img class="video__play" src="./img/tapVideo.png" alt="play">
+                        <!-- <img class="video__play" src="./img/tapVideo.png" alt="play"> -->
                         <img class="LeftBottom" src="./img/branchLeftBottom.png" alt="LeftBottom">
                         <img class="LeftTop" src="./img/branchLeftTop.png" alt="LeftTop">
                         <img class="RightBottom" src="./img/branchRightBottom.png" alt="RightBottom">
@@ -449,10 +535,10 @@
                     </div>
                     <div class="video__button">
                         <div class="video__button-more active">
-                            <a href="#">Актуальные курсы</a>
+                            <a  class ="video__button-href" href="#">Актуальные курсы</a>
                         </div>
                         <div class="video__button-more">
-                            <a href="#">Товары от Марии</a>
+                            <a class ="video__button-href" href="#">Товары от Марии</a>
                         </div>
                     </div>
 
@@ -697,7 +783,7 @@
                                         <p class="course__description">Психолог с практическим 28 летним опытом,
                                             парапсихолог, практикующий массажист, автор методики Психолог</p>
                                     </div>
-                                    <div class="course__button">
+                                    <div class="course__button active">
                                         <a class="course__button-title" href="#">Записаться на курс</a>
                                     </div>
 
@@ -754,7 +840,7 @@
                         Часто задаваемые вопросы
                     </p>
                     <ul class="accordion__list">
-                        <li class="accordion__item ">
+                        <li class="accordion__item" id="1">
                             <div>
                                 <p class="accordion__item-title">Вопрос 1. и длинный текст описания вопроса.</p>
                             </div>

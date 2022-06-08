@@ -1,3 +1,4 @@
+@import "./../variebels";
 .header__titleInfo-text{
     display: flex;
     flex-direction: column;
@@ -17,6 +18,8 @@
         color: #000000;
         width: 659px;
     }
+    
+    }
 
     .header__titleheader-description{
         font-family: Museo Sans Cyrl;
@@ -29,11 +32,18 @@
         width: 643px;
         margin-top: 35px;
     }
-}
+    .header__titleheader-description-tablet{
+        display: none;
+    }
+    
+    
 
 .header__titleInfo-button{
     display: flex;
     .header__titleInfo-more{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 279px;
         height: 60px;
         left: 665px;
@@ -56,17 +66,55 @@
         }
     }
     .header__titleInfo-more a{
-        position: relative;
         text-decoration: none;
-        left:38px;
-        top: 19px;
-        background-color: aqua;
     }
     .active{
-        background-color: #4D9C8C;
-        .reconl{color: rgb(255, 255, 255);}
+    background-color: #4D9C8C;
+        .reconl{
+            color: aliceblue;
+        }
+    
     }
+    
     
 
     
+}
+@include tablet{
+    .header__titleInfo-text .header__title{
+        
+        margin: 60px 0 0 0 ;
+    }
+    .header__titleInfo-text .header__titleheader-titleInfo{
+        max-width: 468px;
+        margin: 0 auto;
+        font-size: 140px;
+        line-height: 115px;
+    }
+    .header__titleheader-description{
+        display: none;
+    }
+    .header__titleheader-description-tablet{
+        display: block;
+        width: 503px;
+        max-height: 111px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        font-family: Museo Sans Cyrl;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 27px;
+        line-height: 37px;
+        text-align: center;
+        color: #000000;
+    }
+    .header__titleInfo-tablet-wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .header__titleInfo-wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }

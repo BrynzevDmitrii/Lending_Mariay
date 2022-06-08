@@ -19,6 +19,9 @@
         list-style-type: none;
         justify-content: space-between;
         flex-wrap: wrap;
+        @include desctop{
+            margin-left: 20%;
+        }
         .press__newsBlokc{
             position: relative;
             .border{

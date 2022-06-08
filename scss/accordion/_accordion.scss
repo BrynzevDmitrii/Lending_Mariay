@@ -21,7 +21,10 @@
             list-style-type: none;
             display: flex;
             flex-direction: column;
-            
+            @include desctop{
+                max-width: 90%;
+                margin-left: 5%;
+            }
             
         }
         .accordion__item{
@@ -31,6 +34,10 @@
             background: #4D9C8C;
             border-radius: 20px;
             margin-bottom: 10px;
+            @include desctop{
+                max-width: 100%;
+        
+            }
         }
         .accordion__item-title{        
             font-family: Museo Sans Cyrl;
@@ -51,6 +58,9 @@
             left: 1208px;
             top: 27px;
             cursor: pointer;
+            @include desctop{
+                display: none;
+            }
             
         }
         .accordion__item-description{
@@ -69,7 +79,7 @@
             border-radius: 20px;
             border: 1px solid #4D9C8C;
             box-sizing: border-box;
-                 
+            transition: 0.4em;
             .accordion__item-title{
                 max-width: 664px;
                 min-height: 37px;
@@ -78,6 +88,9 @@
                 font-size: 30px;
                 line-height: 37px;
                 color: #4D9C8C;
+                @include desctop{
+                    width: 98%;
+                }
             }
             .accordion__item-description{
                 display: block;
@@ -90,6 +103,9 @@
                 line-height: 22px;
                 color: #000000;
                 margin: 52px 0 30px 30px;
+                @include desctop{
+                    width: 97%;
+                }
             }
             .accordion__item-img{
                 display: block;
@@ -97,6 +113,9 @@
                 left: 1134px;
                 top: 0px;
                 border-right: 20px;
+                @include desctop{
+                    display: none;
+                }
             }
             .accordion__closed{
                 z-index: 3;

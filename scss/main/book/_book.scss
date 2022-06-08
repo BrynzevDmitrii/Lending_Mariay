@@ -3,6 +3,9 @@
     min-height: 683px;
     margin: 0 auto;
     margin-top: 196px;
+    @include desctop{
+        overflow: hidden;
+    }
 
     .book__title-container {
         .book__title-title {

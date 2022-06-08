@@ -37,8 +37,10 @@
         }
     }
     .diversity__list-course{
-        
         margin-top: 60px;
+        @include desctop{
+            margin-left: 20%;
+        }
         .course-list{
             list-style-type: none;
             display: flex;
@@ -126,7 +128,14 @@
                     text-align: center;
                     color: #E87383;
                 }
+                
             }
+            .active{                   
+                background: #E87383;
+                .course__button-title{
+                    color: #FFFFFF;
+                }
+        }
         }
 
     }
