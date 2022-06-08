@@ -1,10 +1,17 @@
 .header__pinkspot{
     position: absolute;
     top: 636px;
-
+@include tablet{
+    position: absolute;
+    left: -181px;
+    top: 150px;
+}
 }
 .header__greenspot{
     position: absolute;
     left: 96.9%;
     top:20%;
+    @include desctop{
+        display: none;
+    }
 }

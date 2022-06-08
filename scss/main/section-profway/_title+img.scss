@@ -27,12 +27,21 @@
     }
 
     &__slider {
+        overflow: hidden;
         .sliderwork__list {
+            position: relative;
             max-height: 585px;
             list-style-type: none;
             display: flex;
             justify-content: space-between;
             margin-top: 80px;
+            max-width: 1250px;
+            left: 0px;
+            transition: all ease 2s;
+            .sliderwork__list-item{
+                margin-right: 30px;
+            }
+            
         }
         .sliderwork__title-arrow{
             display: flex;
@@ -77,6 +86,9 @@
     &__profway{
         max-width:80% ;
         margin-left: 211px;
+        @include desctop{
+            margin-left: 10%;
+        }
     }
 
    
@@ -84,6 +96,10 @@
 
     .sliderwork__profway-info {
         display: flex;
+        @include desctop{
+            flex-wrap: wrap;
+        }
+        
     
         .sliderwork__profway-img {
             margin: 153px 60px 0 0 ;
@@ -99,6 +115,7 @@
                 margin: 90px 35px 0 60px;
                 display: flex;
                 flex-direction: column;
+                
 
                 .profway-steps-item {
                     margin-bottom: 155px;
@@ -173,7 +190,14 @@
         margin-top: 66px;
         display: flex;
         margin-left: 720px;
+        @include desctop{
+            margin: 0 ;
+            justify-content:center;
+        }
         &-more{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 279px;
             height: 60px;
             background: #FFFFFF;
@@ -190,12 +214,7 @@
                     width: 229px;
                     text-decoration: none;
                     text-align: center;
-                    color: #E87383;
-                    position: relative;
-                    top: 19px;
-                    left: 30px;
-                   
-                    
+                    color: #E87383;                                   
             }
             
         }

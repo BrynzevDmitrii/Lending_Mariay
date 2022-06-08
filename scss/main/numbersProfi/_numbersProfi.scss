@@ -3,6 +3,9 @@
     height: 964px;
     margin: 0 auto;
     padding-top: 190px;
+    @include desctop{
+        overflow: hidden;
+    }
 
     
     .numbersProfi__title{

@@ -1,10 +1,30 @@
 .header__titleInfo-side{
     position: relative;
     margin-top: 86px;
-    right: 15%;
+    @include desctop{
+        right: 0;
+    }
     .elips{
         position: absolute;
         top: 98px;
         left: 91px;
+    }
+}
+@include tablet{
+    .header__titleInfo-side{
+        position: absolute;
+        top: 543px;
+        left: 10%;
+        margin-top: 0%;
+    }
+    .header__titleInfo-side>img{
+        max-width: 60%;
+        min-height: 414px;
+    }
+    .header__titleInfo-side .elips{
+        position: absolute;
+        top: 16%;
+        left:9%;
+        width: 46%;
     }
 }

@@ -1,8 +1,11 @@
+@import"./../mixin";
+
 .body{
     font-family:'Museo Sans Cyrl','Amatic SC' ;
     width: 100%;
     position: relative;
 }
+
 .header__pinkspot{
     position: absolute;
     top: 636px;
@@ -29,15 +32,48 @@ list-style-type: none;
         max-width: 1635px;
         flex-direction: column;
         &__navbar{
-            
             margin-top: 24px;
             display: flex;
             justify-content: space-between;
+            @include tablet{
+                width: 94%;
+                margin: 0 auto;
+                margin-top: 16px;
+                display: flex;
+                justify-content: initial;
+                
+            }
+            @include mobile{
+                width: 90%;
+                margin: 0 auto;
+                margin-top: 16px;
+                display: flex;
+                justify-content: initial;
+            }
+            
             .header___navbar-burger{
                 margin-top: 30px;
         }
+        &-logo{
+            width: 178px;
+            @include tablet{
+                max-width: 178px;
+                margin-left: 45%;
+            }
+            @include mobile{
+                margin-top: 17px;
+                max-width: 83px;
+                margin-left: 45%;
+            }
+        }
         &-socialInfo{
             margin-top: 19px;
+            @include tablet{
+                margin-left: 22%;
+                .header__navbar-socialButton{
+                    display: flex;
+                }
+            }
             .header__navbar-socialButton .button{
             padding-right: 13px;
             }
@@ -58,13 +94,25 @@ list-style-type: none;
         }
 
         &-actual{
-            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 279px;
             height: 60px;
         border: 1px solid #E87383;
         box-sizing: border-box;
         border-radius: 100px;
         right: 20%;
+        @include tablet{
+            width: 230px;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @include mobile{
+            display: none;
+        }
             .buttonText{
                 font-weight: 300;
                 width: 160px;
@@ -74,14 +122,15 @@ list-style-type: none;
                 line-height: 22px;
                 // text-align: center;
                 color: #E87383;
+                @include tablet{
+                    font-size: 14px;
+                    max-width: 130px;
+                }
             }
         }
 
         &-course{
             text-decoration: none;
-            position: absolute;
-            left: 60px;
-            top: 19px;
 
         }
     }
@@ -89,7 +138,11 @@ list-style-type: none;
             &-title{
                 display: flex;
                 justify-content: space-between;
-                margin-left: 11%;
+                @include desctop{
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 0 auto;
+                }
             }
             
         }
@@ -103,6 +156,9 @@ list-style-type: none;
             list-style-image: url("/img/vetca.svg");
             width: 100%;
             margin-left: 65px;
+            @include desctop{
+                margin-left:8%;
+            }
             .header__titleInfo-numberStyle{
                 font-family: Amatic SC;
                 font-style: normal;
@@ -124,5 +180,19 @@ list-style-type: none;
             }
             
         }
-         
 }
+
+    @include tablet{
+        .header .header__titleInfo-scills{
+            display: flex;
+            flex-direction: column;
+            align-items:flex-end;
+            margin-top: 0px;
+        }
+        .header__titleInfo-scills >li{
+        margin-bottom: 49px;
+    }
+        .header__titleInfo-scills >li:nth-child(2){
+            margin:  0 70px 67px 0;
+        }
+    }
