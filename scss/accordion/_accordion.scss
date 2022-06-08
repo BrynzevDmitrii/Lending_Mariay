@@ -46,10 +46,9 @@
             font-size: 30px;
             line-height: 37px;
             color: #FFFFFF;
-            position: relative;
-                top: 30px;
-                left: 30px;
-
+            max-width: 90%;
+            margin: 30px 0 30px 30px;
+    
         }
         .accordion__closed{
             width: 30px;
@@ -80,8 +79,9 @@
             border: 1px solid #4D9C8C;
             box-sizing: border-box;
             transition: 0.4em;
+            overflow: hidden;
+            box-sizing: border-box;
             .accordion__item-title{
-                max-width: 664px;
                 min-height: 37px;
                 font-family: Museo Sans Cyrl;
                 font-weight: 300;
@@ -94,7 +94,7 @@
             }
             .accordion__item-description{
                 display: block;
-                width: 662px;
+                width: 90%;
                 min-height: 43px;
                 font-family: Museo Sans Cyrl;
                 font-style: normal;
