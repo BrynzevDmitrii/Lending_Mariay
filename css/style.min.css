@@ -678,13 +678,13 @@ table {
 .numbersProfi__container .numbersProfi__title .numbersProfi__list-container .numbersProfi__list-img .item-img1 {
   margin-right: 224px;
   position: relative;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 .numbersProfi__container .numbersProfi__title .numbersProfi__list-container .numbersProfi__list-img .item-img2 {
   margin-left: 259px;
   position: absolute;
   top: 74%;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   box-shadow: 0px 10px 30px rgba(77, 156, 140, 0.15);
   border-radius: 20px;
 }
@@ -1334,9 +1334,8 @@ table {
   font-size: 30px;
   line-height: 37px;
   color: #FFFFFF;
-  position: relative;
-  top: 30px;
-  left: 30px;
+  max-width: 90%;
+  margin: 30px 0 30px 30px;
 }
 .accordion .accordion__container .accordion__closed {
   width: 30px;
@@ -1366,9 +1365,10 @@ table {
   border: 1px solid #4D9C8C;
   box-sizing: border-box;
   transition: 0.4em;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 .accordion .accordion__item.active_accordion .accordion__item-title {
-  max-width: 664px;
   min-height: 37px;
   font-family: Museo Sans Cyrl;
   font-weight: 300;
@@ -1383,7 +1383,7 @@ table {
 }
 .accordion .accordion__item.active_accordion .accordion__item-description {
   display: block;
-  width: 662px;
+  width: 90%;
   min-height: 43px;
   font-family: Museo Sans Cyrl;
   font-style: normal;
@@ -1600,4 +1600,4 @@ footer {
   line-height: 22px;
   text-align: center;
   color: #ffffff;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.min.css.map */
